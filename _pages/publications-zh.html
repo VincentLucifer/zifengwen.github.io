@@ -1,0 +1,30 @@
+---
+layout: archive
+title: "论文"
+permalink: /zh/publications/
+lang: zh
+translation_key: publications
+author_profile: true
+---
+
+{% include base_path %}
+
+{% if site.publication_category %}
+  {% for category in site.publication_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{% if category[0] == 'conferences' %}会议论文{% elsif category[0] == 'manuscripts' %}期刊论文{% elsif category[0] == 'books' %}著作{% elsif category[0] == 'thesis' %}优秀毕业论文{% else %}{{ category[1].title }}{% endif %}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}

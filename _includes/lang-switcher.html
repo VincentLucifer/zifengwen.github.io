@@ -1,0 +1,20 @@
+{% assign alternate_lang = 'zh' %}
+{% assign alternate_label = '中文' %}
+{% assign alternate_url = '/zh/' %}
+
+{% if current_lang == 'zh' %}
+  {% assign alternate_lang = 'en' %}
+  {% assign alternate_label = 'EN' %}
+  {% assign alternate_url = '/' %}
+{% endif %}
+
+{% if page.translation_key %}
+  {% for p in site.pages %}
+    {% if p.translation_key == page.translation_key and p.lang == alternate_lang %}
+      {% assign alternate_url = p.url %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+<a href="{{ base_path }}{{ alternate_url }}" class="lang-switcher" lang="{{ alternate_lang }}" hreflang="{{ alternate_lang }}" title="{% if current_lang == 'zh' %}Switch to English{% else %}切换到中文{% endif %}">{{ alternate_label }}</a>

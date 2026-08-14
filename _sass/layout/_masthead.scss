@@ -79,3 +79,9 @@
   border-bottom: 2px solid var(--global-text-color);
   /* No need to repeat pointer-events and cursor here */
 }
+
+.lang-switcher {
+  font-weight: 700;
+  font-size: 0.85em;
+  letter-spacing: 0.02em;
+}

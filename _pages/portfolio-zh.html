@@ -1,0 +1,26 @@
+---
+layout: archive
+title: "项目"
+permalink: /zh/portfolio/
+lang: zh
+translation_key: portfolio
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign items = site.portfolio | where_exp: "item", "item.lang == 'zh'" | sort: "date" | reverse %}
+
+<h2>科研项目</h2>
+<hr />
+{% assign research = items | where: "category", "research" %}
+{% for post in research %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<h2>个人项目</h2>
+<hr />
+{% assign personal = items | where: "category", "personal" %}
+{% for post in personal %}
+  {% include archive-single.html %}
+{% endfor %}
