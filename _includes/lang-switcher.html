@@ -15,6 +15,18 @@
       {% break %}
     {% endif %}
   {% endfor %}
+{% elsif page.collection == 'publications' %}
+  {% if alternate_lang == 'zh' %}
+    {% assign alternate_url = '/zh/publications/' %}
+  {% else %}
+    {% assign alternate_url = '/publications/' %}
+  {% endif %}
+{% elsif page.collection == 'portfolio' %}
+  {% if alternate_lang == 'zh' %}
+    {% assign alternate_url = '/zh/portfolio/' %}
+  {% else %}
+    {% assign alternate_url = '/portfolio/' %}
+  {% endif %}
 {% endif %}
 
 <a href="{{ base_path }}{{ alternate_url }}" class="lang-switcher" lang="{{ alternate_lang }}" hreflang="{{ alternate_lang }}" title="{% if current_lang == 'zh' %}Switch to English{% else %}切换到中文{% endif %}">{{ alternate_label }}</a>

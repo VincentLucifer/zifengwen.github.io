@@ -1,6 +1,14 @@
 en:
+  name: "Zifeng Wen"
   bio: "MSc Advanced Computing @ Imperial. CS @ HIT Shenzhen."
   follow: "Follow"
+  location: "London, United Kingdom"
+  employer: "Imperial College London"
 zh:
-  bio: "帝国理工 Advanced Computing 硕士 / 哈工大（深圳）计算机本科"
+  name: "文梓锋"
+  bio: |
+    帝国理工 Advanced Computing 硕士
+    哈工大（深圳）计算机科学与技术本科
   follow: "关注"
+  location: "英国伦敦"
+  employer: "伦敦帝国理工学院"

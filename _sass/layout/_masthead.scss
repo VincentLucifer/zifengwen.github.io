@@ -28,6 +28,7 @@
     @include container;
     @include clearfix;
     padding: 0.5em 1em;
+    padding-right: 7.5rem;
     font-family: $sans-serif-narrow;
 
     @include breakpoint($x-large) {
@@ -80,8 +81,45 @@
   /* No need to repeat pointer-events and cursor here */
 }
 
-.lang-switcher {
-  font-weight: 700;
-  font-size: 0.85em;
-  letter-spacing: 0.02em;
+.masthead__tools {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  z-index: 30;
+  background: var(--global-bg-color);
+
+  a {
+    color: var(--global-masthead-link-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-masthead-link-color-hover);
+    }
+  }
+
+  #theme-toggle a {
+    width: 1.5rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  #lang-switcher {
+    padding-left: 0.75rem;
+    border-left: 1px solid var(--global-border-color);
+
+    a {
+      display: inline-block;
+      box-sizing: border-box;
+      min-width: 3.25em;
+      text-align: center;
+      font-weight: 700;
+      font-size: 0.85em;
+      letter-spacing: 0.04em;
+    }
+  }
 }
