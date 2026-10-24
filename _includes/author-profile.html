@@ -43,6 +43,14 @@
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[locale].email_label | default: "Email" }}</a></li>
       {% endif %}
+      <li class="author__wechat">
+        <span class="author__wechat-trigger" tabindex="0">
+          <i class="fab fa-fw fa-weixin icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[locale].wechat_label | default: "WeChat" }}
+        </span>
+        <span class="author__wechat-pop" hidden>
+          <img src="{{ base_path }}/images/wechat-qr.jpg" alt="{% if current_lang == 'zh' %}微信二维码，扫码添加文梓锋{% else %}WeChat QR code to add Zifeng Wen{% endif %}" width="240" height="320">
+        </span>
+      </li>
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
       {% if author.academia %}

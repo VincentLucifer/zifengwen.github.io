@@ -1,0 +1,20 @@
+{% include base_path %}
+
+{% if current_lang == 'zh' %}
+  {% assign cv_file = "文梓锋-简历.pdf" %}
+  {% assign cv_label = "下载中文简历" %}
+{% else %}
+  {% assign cv_file = "WenZifeng-CV.pdf" %}
+  {% assign cv_label = "Download CV" %}
+{% endif %}
+
+<div class="cv-download">
+  <div class="cv-download__meta">
+    <span class="cv-download__badge" aria-hidden="true">PDF</span>
+    <span class="cv-download__file">{{ cv_file }}</span>
+  </div>
+  <a class="btn" href="{{ base_path }}/files/{{ cv_file }}" download="{{ cv_file }}">
+    <i class="fas fa-download" aria-hidden="true"></i>
+    <span>{{ cv_label }}</span>
+  </a>
+</div>

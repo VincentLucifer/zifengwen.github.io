@@ -5,13 +5,14 @@ permalink: /cv/
 lang: en
 translation_key: cv
 author_profile: true
+toc: true
 redirect_from:
   - /resume
 ---
 
 {% include base_path %}
 
-[Download CV (PDF)]({{ base_path }}/files/WenZifeng-CV.pdf)
+{% include cv-download.html %}
 
 Education
 ======
@@ -19,7 +20,8 @@ Education
 * **BEng in Computer Science and Technology**, Harbin Institute of Technology, Shenzhen (Project 985), Aug. 2022 – Jul. 2026
   * GPA: 94.21/100 (3.93/4.00), Rank: 2/317 (Top 1%)
   * Outstanding undergraduate thesis: *Minimized Design of Clec11a Protein Based on Diffusion Models* (16 recipients in the Class of 2026)
-* **Winter Data Science Project**, Imperial College London, Jan. 2024 – Feb. 2024
+  * Scholarships: university-level scholarships for three consecutive years
+* **Data Science Exchange Project**, Imperial College London, Jan. 2024 – Feb. 2024
   * Built a 3D brain tumour segmentation system from multi-modal MRI (T1/T1c/T2/FLAIR) with a U-Net backbone
   * Distinction (Grade A); Best Presentation Award and Second-Class Scholarship
 

@@ -5,11 +5,12 @@ permalink: /zh/cv/
 lang: zh
 translation_key: cv
 author_profile: true
+toc: true
 ---
 
 {% include base_path %}
 
-[下载简历（PDF）]({{ base_path }}/files/WenZifeng-CV-zh.pdf)
+{% include cv-download.html %}
 
 教育背景
 ======
@@ -17,7 +18,8 @@ author_profile: true
 * **哈尔滨工业大学（深圳）**，计算机科学与技术本科，2022.08–2026.07
   * GPA: 94.21 / 100（3.93 / 4.00），排名 2 / 317（Top 1%）
   * 优秀毕业论文：基于扩散模型的 Clec11a 蛋白最小化设计方法研究（全院 16 人）
-* **伦敦帝国理工学院**，Data Science 寒假交流项目，2024.01–2024.02
+  * 奖学金：连续三年获得校级奖学金
+* **伦敦帝国理工学院**，Data Science 交流交换项目，2024.01–2024.02
   * 基于多模态 MRI（T1/T1c/T2/FLAIR）与 U-Net 构建脑肿瘤 3D 分割系统
   * 总体成绩 A 级（Distinction），获最佳展示奖与二等奖学金
 
