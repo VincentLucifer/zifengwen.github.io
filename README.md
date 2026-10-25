@@ -1,101 +1,155 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Zifeng Wen | Personal Website & Technical Portfolio
 
-![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
+**A bilingual personal website showcasing my academic background, engineering projects, research experience, and technical interests.**
 
-# Getting Started
+**文梓锋的个人主页与技术作品集**，用于集中展示教育背景、技术项目、科研成果与个人技术方向。
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Edit site-wide configuration in `_config.yml` and double check that the `url` is the one that you just selected in the previous step and that `repository` reflects the correct path for your repository.
-1. Add your site content, upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
-
-See more info at https://academicpages.github.io/
-
-### Additional Tutorials
-
-Additional tutorials for working with the Academic Pages template can be found at the following sites:
-- https://jayrobwilliams.com/posts/2020/06/academic-website/
-
-## Running locally
-
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
-
-1. Clone the repository and made updates as detailed above.
-
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distributions and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try running `sudo apt install ruby-dev ruby-bundler nodejs` again.
-
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
-
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change to Markdown (*.md) and HTML files, while changes to the core template and configuration (i.e., `_config.yml`) will require stopping and restarting Jekyll.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
-
-```bash
-chmod -R 777 .
-docker compose up
-```
-
-You should now be able to access the website from `localhost:4000`.
-
-### Using the DevContainer in VS Code
-
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development container configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
-
-# Maintenance
-
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
-
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii), and additional maintainers would be welcome.
-
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of the template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize, although [rebasing](https://git-scm.com/docs/git-rebase) the changes from this template will work along with manually [cherry picking](https://git-scm.com/docs/git-cherry-pick) the relevant commits. If you are not comfortable with the Git command line, you can save your various `.yml` configuration files and Markdown files, delete the repository, and fork it again. 
+🌐 **Website:** [Visit the Personal Website](https://vincentlucifer.github.io/zifengwen.github.io/)
 
 ---
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+## Overview | 项目简介
+
+This repository contains the source code for my personal academic website and technical portfolio. It is designed to provide a structured, accessible, and continuously maintainable overview of my background, selected projects, research work, and professional interests.
+
+本仓库包含个人学术主页与技术作品集的网站源代码，旨在以清晰、易访问、便于持续维护的方式，展示个人教育背景、代表性项目、科研成果与技术兴趣。
+
+Rather than serving as a static résumé, the website provides a structured space for presenting technical work in greater depth, connecting project descriptions with relevant research outputs and supporting materials.
+
+与单纯的简历不同，该网站可以更系统地介绍技术项目及其研究背景，并关联相关成果和补充材料。
+
+## Key Features | 核心功能
+
+### 1. Structured Project Portfolio | 结构化项目作品集
+
+- Organises selected projects into dedicated, reusable content pages.
+- Presents project context, technical approaches, and outcomes in a consistent format.
+- Makes it easier for recruiters and collaborators to explore relevant work.
+
+将不同项目组织为独立页面，采用统一的内容结构介绍项目背景、技术方案与成果，方便招聘人员和合作者快速了解相关经历。
+
+### 2. Academic and Research Showcase | 学术与科研成果展示
+
+- Maintains dedicated sections for publications and academic work.
+- Supports structured metadata and links to relevant research materials.
+- Separates research outputs from general project and profile information.
+
+通过独立的论文与学术成果目录组织研究内容，支持展示相关元数据及研究材料，并将科研成果与普通项目经历分开管理。
+
+### 3. Bilingual Personal Profile | 中英文个人主页
+
+- Provides English and Chinese profile content.
+- Presents academic background, technical interests, and selected achievements.
+- Makes the portfolio accessible to both international and Chinese-speaking audiences.
+
+提供中英文个人介绍，展示教育背景、技术兴趣与代表性经历，兼顾国际招聘场景与中文交流场景。
+
+### 4. Content-Driven Website Architecture | 内容驱动的网站架构
+
+The website uses Jekyll and Markdown-based content collections to separate written content from page layouts.
+
+网站使用 Jekyll，并通过 Markdown 内容文件与页面布局分离的方式组织内容，使项目介绍、论文信息与页面模板可以相对独立地维护。
+
+### 5. Maintainable Development Workflow | 可维护的开发流程
+
+- Uses configuration files to manage site-wide settings.
+- Supports local preview before publishing.
+- Includes Docker and development-container configuration for reproducible local development environments.
+
+通过配置文件统一管理站点设置，并支持发布前本地预览。仓库还包含 Docker 与 Dev Container 配置，可用于构建更一致的本地开发环境。
+
+---
+
+## Technology Stack | 技术栈
+
+| Technology | Purpose / 用途 |
+|---|---|
+| Jekyll | Static site generation / 静态网站生成 |
+| Markdown | Structured content authoring / 结构化内容编写 |
+| Liquid templates | Dynamic page rendering / 模板渲染 |
+| HTML & CSS / Sass | Page structure and styling / 页面结构与样式 |
+| JavaScript | Front-end interactions / 前端交互 |
+| GitHub Pages | Website hosting and publishing / 网站托管与发布 |
+| Docker | Optional containerised local development / 可选的容器化本地开发 |
+
+## Repository Structure | 项目结构
+
+```text
+.
+├── _config.yml          # Site-wide configuration
+├── _pages/              # Profile and static pages
+├── _portfolio/          # Project portfolio entries
+├── _publications/       # Academic publications
+├── _posts/              # Blog posts and updates
+├── _talks/              # Talks and presentations
+├── _layouts/            # Page templates
+├── _includes/           # Reusable template components
+├── _sass/               # Sass stylesheets
+├── assets/              # Front-end assets
+├── images/              # Images and visual materials
+├── files/               # Downloadable documents
+├── markdown_generator/   # Content-generation utilities
+├── Dockerfile           # Container configuration
+└── docker-compose.yaml   # Local container orchestration
+```
+
+## Local Development | 本地运行
+
+### Prerequisites | 环境要求
+
+- Git
+- Ruby
+- Bundler
+- Jekyll and the project's Ruby dependencies
+
+### Setup | 安装依赖
+
+```bash
+git clone https://github.com/VincentLucifer/zifengwen.github.io.git
+cd zifengwen.github.io
+bundle install
+```
+
+### Run Locally | 启动本地预览
+
+```bash
+bundle exec jekyll serve -l -H localhost
+```
+
+Open the local address reported by Jekyll, typically `http://localhost:4000`, to preview the website.
+
+启动成功后，根据终端输出访问本地地址，通常为 `http://localhost:4000`，即可预览网站。
+
+**Note:** The final local URL and deployment path depend on the Jekyll configuration and GitHub Pages settings.
+
+**注意：** 实际本地访问路径和线上部署路径取决于 Jekyll 配置与 GitHub Pages 设置。
+
+## Design Principles | 设计思路
+
+- **Separation of content and presentation｜内容与展示分离：** Project descriptions and publication records are maintained separately from reusable page layouts.
+- **Structured information｜结构化信息：** Dedicated content collections make different types of professional work easier to organise and navigate.
+- **Maintainability｜可维护性：** Centralised configuration and reusable templates reduce repeated page-level work.
+- **Professional presentation｜专业化展示：** The website acts as a central entry point for exploring academic, engineering, and project experience.
+
+## Future Improvements | 后续改进方向
+
+Potential improvements include:
+
+- Adding project screenshots, architecture diagrams, and concise technical case studies.
+- Improving mobile usability, accessibility, and page-loading performance.
+- Adding automated build checks to validate website changes before publication.
+- Documenting measurable outcomes and individual contributions for selected projects.
+
+未来可以进一步增加项目截图、系统架构图与技术案例，改善移动端体验、可访问性和加载性能，并通过自动化构建检查提升发布质量。
+
+## License | 许可证
+
+This repository includes the Academic Pages template and its associated licensing information. Refer to the repository's `LICENSE` file for the applicable terms.
+
+本仓库基于 Academic Pages 模板构建，具体许可证及使用条件请参阅仓库中的 `LICENSE` 文件。
+
+---
+
+**Purpose | 项目定位：** A continuously maintained personal website for presenting technical work, research outputs, and professional experience.
+
+一个持续维护的个人网站，用于展示技术项目、科研成果与专业经历。
